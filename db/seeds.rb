@@ -25,7 +25,7 @@ pet_app1 = PetApplicant.create!(pet_id: pet1.id, applicant_id: app1.id)
 pet_app2 = PetApplicant.create!(pet_id: pet2.id, applicant_id: app1.id)
 pet_app2 = PetApplicant.create!(pet_id: pet4.id, applicant_id: app1.id)
 
-app_2 = Applicant.create!(name: "Mageneto", street_address: "Evil Mansion Way",
+app2 = Applicant.create!(name: "Mageneto", street_address: "Evil Mansion Way",
   city: "Denver", state: "CO", zip_code: "80123", description: "I need a heavy metal dog", status: 'Pending')
 
 pet_3 = shelter1.pets.create(name: 'Mr. Pirate', breed: 'tuxedo shorthair', age: 5, adoptable: false)
