@@ -37,6 +37,8 @@ RSpec.describe Shelter do
         expect(page).to_not have_link(shelter2.name)
         expect(page).to_not have_link(shelter3.name)
       end
+
+      # save_and_open_page
     end
 
   end

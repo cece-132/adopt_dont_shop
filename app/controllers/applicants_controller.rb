@@ -29,7 +29,7 @@ class ApplicantsController < ApplicationController
       applicant.update(status: "In Progress")
       redirect_to "/applicants/#{applicant.id}"
     else
-     flash[:notice] = "Unable to create application. You must fill in all fields required."
+     flash[:notice] = applicant.errors.full_messages.to_sentence
       redirect_to '/applicants/new'
     end 
   end
