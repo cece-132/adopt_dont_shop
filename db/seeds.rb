@@ -19,7 +19,7 @@ app1 = Applicant.create!(name: "Billy Wahl", street_address: "123 S Street Way",
 app2 = Applicant.create!(name: "Cydney Whitemon", street_address: "124 S Way Avenue",
                         city: "Denver", state: "CO", zip_code: "80019", description: "Dogs Like Me")
 app3 = Applicant.create!(name: "Mageneto", street_address: "Evil Mansion Way",
-                        city: "Denver", state: "CO", zip_code: "80123", description: "I need a heavy metal dog", status: 'Pending')
+                        city: "Denver", state: "CO", zip_code: "80123", description: "I need a heavy metal dog")
 
 pet1 = Pet.create!(adoptable: true, age: 6, breed: "Catahoula Leopard Dog", name: "Rosy", shelter_id: shelter1.id)
 pet2 = Pet.create!(adoptable: true, age: 4, breed: "Dobermann", name: "Lundy", shelter_id: shelter1.id)
