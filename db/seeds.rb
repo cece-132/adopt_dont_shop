@@ -31,6 +31,6 @@ app2 = Applicant.create!(name: "Mageneto", street_address: "Evil Mansion Way",
 
 pet_3 = shelter1.pets.create(name: 'Mr. Pirate', breed: 'tuxedo shorthair', age: 5, adoptable: false)
 
-pet_app3 = PetApplicant.create!(pet_id: pet_1.id, applicant_id: app2.id)
-pet_app4 = PetApplicant.create!(pet_id: pet_2.id, applicant_id: app2.id)
+pet_app3 = PetApplicant.create!(pet_id: pet1.id, applicant_id: app2.id)
+pet_app4 = PetApplicant.create!(pet_id: pet2.id, applicant_id: app2.id)
 pet_app4 = PetApplicant.create!(pet_id: pet_3.id, applicant_id: app2.id)
